@@ -7,7 +7,7 @@ require('./db/mongoose')
 
 app.use(cors())
 app.use(express.json())
-app.use('/images', express.static(__dirname+"/images"))
+app.use('/images', express.static("images"))
 
 
 app.use('/api/posts', postRoutes)
